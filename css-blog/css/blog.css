@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family:'Roboto Mono', monospace;}
+
+.parte-de-arriba{
+    display: flex;
+    grid-template-rows: 1fr ;
+    background-color: rgb(64, 199, 163);
+    justify-content: end;
+    padding: 2.5vh 3vw 2.5vh 0;
+    grid-area: 1/1/2/2;
+    border: black 1px solid;
+
+}
+.as{
+    padding: 0 1vw;
+    color: black;
+    display: flex;
+}
+
+
+.imagen-as:hover{
+    height: 5vh;
+    transition-duration: .3s;
+    transition-delay: .2s;
+}
+
+
+.parte-intermedia{
+    grid-area: 2/1/3/2;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border: black 1px solid;
+    justify-items: center;
+ }
+
+ .section-my-blog{
+    display: grid;
+    justify-content: start;
+    grid-template-rows: 2fr 20px 2fr;
+    grid-template-columns: 1fr 10fr 1fr;
+    gap: 3vw;
+    padding: 4vw 0 0 0;
+ }
+
+ .titulo-mi-blog{
+    padding: 3vw 0 0 3vw;
+ }
+
+ .parte-interna{
+    grid-area: 3/2/4/3;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+ .my-blog-image{
+    
+    grid-area: 1/1/2/4;
+    display: flex;
+    justify-content: center;
+    background-size: 30vw 20vh;
+}
+
+.imagen{
+    height: 59vh;
+    width: 80vw;
+}
+
+ .noticias{
+    grid-area: 2/2/3/3;
+    text-align: start;
+    font-size: 17px;
+ }
+ .noticias h2{
+    border-bottom: 1px solid black;
+ }
+
+ .texto-interno{
+    text-align: justify;
+    
+ }
+ .parte-interna{
+    font-size: 17px;
+ }
+ .parte-interna h1{
+    font-size: 30px;
+ }
+
+
+ .parte-final{
+    display: grid;
+    grid-template-rows: 2.4vw 5vw;
+}
+
+.color-azul{
+    background-color:rgb(64, 199, 163) ;
+}
+
+.color-gris{
+    background-color: rgb(30,34,40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.parte-gris-chida{
+    display: flex;
+    background-color: rgb(192, 192, 192);
+    gap: 30px;
+    justify-content: space-evenly;
+}
+
+.parte-chida{
+    display: flex;
+    align-items: center;
+    
+}
+.parte-chida h3{
+    text-decoration: underline;
+}
+.parte-chida h3:hover{
+    cursor: pointer;
+}
+
+
+
+.imagen1{
+    height: 10vh;
+    width: 5vw;
+    padding-left: 7px;
+    padding-right: 10px;
+}

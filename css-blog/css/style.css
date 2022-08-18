@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family:'Roboto Mono', monospace;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/css-blog/assets/I4TD08SA.png)  ;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: 1.3fr 4fr 24fr;
+}
+
+.parte-de-arriba{
+    display: flex;
+    grid-template-rows: 1fr ;
+    background-color: rgb(64, 199, 163);
+    justify-content: end;
+    padding: 2.5vh 3vw 2.5vh 0;
+    grid-area: 1/1/2/2;
+}
+.as{
+    padding: 0 1vw;
+    color: black;
+}
+
+.imagen-as:hover{
+    height: 5vh;
+    transition-duration: .3s;
+    transition-delay: .2s;
+}
+
+a{
+    text-decoration: none;
+
+}
+.parte-intermedia{
+   grid-area: 2/1/3/2;
+   background-color: white;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   align-items: center;
+}
+
+.mi-blog{
+    grid-area: 1/1/2/2;
+    padding: 0  0 0 7vw;
+    font-size: 2vw;
+    background-size: 100%;
+}
+.sobre-mi{
+    grid-area: 1/2/2/3;
+    text-align: end;
+    padding: 0 7vw 0 0;
+
+}
+
+
+.sobre-mi-a{
+    padding:  0 10vw 0 0;
+    color:  black;
+    text-decoration:underline;
+
+}
+
+
+.texto-interno{
+    display: grid;
+    grid-area: 3/1/4/2;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3vw;
+    grid-template-rows: 1fr 1fr 1fr 3fr;
+    grid-template-columns: 1fr 4fr 1fr;
+    
+}
+
+.texto-interno-interno{
+    grid-area: 2/2/4/3;
+    font-family: Light 300 Italic;
+    color: white;
+}
+
+.texto-interno-boton{
+    grid-area: 4/2/5/3;
+    
+   
+}
+.boton{
+    background-color: rgba(64, 199, 163, 0.692);
+    font-size: 2vw ; 
+    padding: 1vw;
+    color: white    ;
+    border: .1px white solid ;
+    border-radius: 2px;
+}
+
+.boton:hover{
+    background-color: rgb(64, 199, 163);
+    transition-duration: .2s;
+}
+
+.boton:active{
+    background-color: rgb(50, 148, 122);
+
+}
+.sobre-mi-a:hover{
+
+    font-size: 1.3vw;
+    transition-delay: .2s;
+    transition-duration: .5s;
+}
+
+@media screen and (max-width :364px) {
+    .texto-interno {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        
+
+    }
+
+    .parte-intermedia{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        justify-items: center;        
+    }
+    .sobre-mi{
+        grid-area: 2/1/3/2;
+    }
+
+    .texto-interno-interno{
+        grid-area: 1/1/2/4;
+    } 
+    .texto-interno-boton{
+        grid-area: 2/2/3/3;
+        align-items: normal;
+        position: relative;
+        top: -80px;
+    }
+    
+}
+
+/* 
+.parte-de-arriba{
+    display: grid;
+    grid-template-rows: 1fr ;
+    background-color: rgb(64, 199, 163);
+    justify-content: end;
+    padding: 4vh 6vw 4vh 0;
+
+}
+
+.section-media{
+    
+    height: 91.3vh;
+    width: 100vw;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.section-total{
+    width: 100%;
+    height: 100%;
+}    
+
+.mi-blog{
+    display: grid;
+    grid-area: 1/1/2/2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    color: rgb(255, 255, 255);
+    padding: 6vh 6vw 6vh 6vw ;
+
+}   
+.sobre-mi-1{
+        grid-area: 1/3/2/4;
+        padding: 6vh 6vw;
+
+}
+.sobre-mi{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    text-align: end;
+    font-size: 20px;
+} 
+
+.as{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.more-text{
+    color: white;
+    grid-area: 2/1/4/4;
+    display: grid;
+    justify-content: center;
+    text-align: start;
+    grid-template-rows: 1fr,1fr;
+    grid-template-columns: repeat(1,1fr);
+    
+    font-size: 40px;
+    height: 30%;
+    
+}
+
+.texto{
+    grid-area: 1/2/1/7;
+}
+
+.more-text-2{
+    display: grid;
+    align-items: center;
+    grid-area: 2/2/3/3;
+}
+
+
+.boton-de-mas-texto{
+    background-color: rgb(64, 199, 163);
+} */

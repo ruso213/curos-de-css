@@ -1,0 +1,359 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: radial-gradient(rgb(255, 255, 255), rgba(0, 0, 0, 0.418));
+    padding: 0 0 0 20px;
+}
+
+.contenedor-principal {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: 2fr 40px 2fr;
+    margin: 0 auto;
+    grid-auto-rows: 400px;
+    gap: 20px;
+    justify-content: normal;
+    justify-items: center;
+    align-items: start;
+}
+
+.texto {
+    align-items: center;
+    object-fit: contain;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: minmax(250px, 1fr) 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    color: black;
+    grid-area: 1/1/2/4;
+
+}
+
+.imagen-del-mando {
+    grid-area: 1/4/4/7;
+    width: 90%;
+}
+
+.texto-texto {
+    grid-area: 2/1/3/4;
+
+
+}
+
+.titulo {
+    color: rgb(238, 156, 62);
+    grid-area: 1/1/2/4;
+
+}
+
+.boton-search1 {
+    border-radius: 25px;
+    font-size: 40px;
+    align-items: center;
+    background-color: rgb(107, 199, 53);
+    border: none;
+    grid-area: 3/2/4/3;
+    /*     box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 1px 2px rgb(0 0 0 / 23%);
+ */
+}
+
+.boton-search1 {
+    border-radius: 25px;
+    font-size: 40px;
+    align-items: center;
+    background-color: rgb(107, 199, 53);
+    border: none;
+    grid-area: 3/2/4/3;
+    /*     box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 1px 2px rgb(0 0 0 / 23%);
+ */
+}
+
+.boton-search1:hover {
+
+    background-color: rgb(50, 146, 46);
+    box-shadow: 0 5px 8px rgb(0 0 0 / 16%), 0 5px 10px rgba(50, 146, 46, 0.651);
+    transition-duration: .5s;
+    font-size: 42px;
+    border-radius: 25px;
+    cursor: pointer;
+
+}
+
+
+
+.parte-de-abajo {
+    grid-area: 3/1/4/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: end;
+    justify-content: space-evenly;
+    /*     box-shadow: 5px 5px 50px 50px rgb(0 0 0 / 16%), 5px 5px  10px 10px rgba(255, 255, 255, 0.651);
+ */
+    /* background-color: rgb(0 0 0 / 16%) */
+    ;
+    padding: 0 0 150px 0;
+
+}
+
+.imagen-de-abajo {
+    height: 90%;
+    width: 70%;
+    align-items: center;
+    grid-area: 1/1/3/3;
+    position: relative;
+    top: -15px;
+    object-position: 50% 30%;
+    border: rgb(50, 146, 46) solid 3px;
+    border-radius: 10px;
+    /*     background-color: white;
+ */
+    /*     box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 20%), 10px 10px  10px 10px rgba(92, 92, 92, 0.315);
+ */
+}
+
+.nuestros {
+    color: rgb(255, 163, 58);
+    grid-area: 2/1/3/3;
+    position: relative;
+    top: -70px;
+}
+
+
+
+.imagen-1 {
+    /*     grid-area: 1/2/2/3;
+ */
+    height: 200px;
+    width: 200px;
+    border: rgb(50, 146, 46) solid 3px;
+    border-radius: 10px;
+    background-color: white;
+    /*     box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 20%), 10px 10px  10px 10px rgba(92, 92, 92, 0.315);
+ */
+
+}
+
+.imagen-2 {
+    /*     grid-area: 1/3/2/4;
+ */
+    height: 200px;
+    width: 200px;
+    border: rgb(50, 146, 46) solid 3px;
+    border-radius: 10px;
+    /*     background-color: white;
+ */
+    position: relative;
+    left: -15.6px;
+    /*     box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 20%), 10px 10px  10px 10px rgba(92, 92, 92, 0.315);
+ */
+}
+
+.imagen-3 {
+    /*     grid-area: 2/3/3/4;
+ */
+    height: 170px;
+    width: 200px;
+    border: rgb(50, 146, 46) solid 3px;
+    border-radius: 10px;
+    position: relative;
+    left: -11px;
+    /*     background-color: white;
+ */
+    /*     box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 20%), 10px 10px  10px 10px rgba(92, 92, 92, 0.315);
+ */
+}
+
+.imagen-4 {
+
+    /*     grid-area: 1/2/2/3;
+ */
+    height: 170px;
+    width: 200px;
+    border: rgb(50, 146, 46) solid 3px;
+    border-radius: 10px;
+    /*     background-color: white;
+ */
+    /*     box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 20%), 10px 10px  10px 10px rgba(92, 92, 92, 0.315);
+ */
+}
+
+.boton-de-compra {
+    background-color: rgb(107, 199, 53);
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 1px 2px rgb(0 0 0 / 23%);
+    border-radius: 25px;
+    border: none;
+}
+
+.boton-de-compra:hover {
+    background-color: rgb(50, 146, 46);
+    box-shadow: 0 5px 8px rgb(0 0 0 / 16%), 0 5px 10px rgba(50, 146, 46, 0.651);
+    transition-duration: .4s;
+    font-size: 14px;
+    border-radius: 25px;
+    cursor: pointer;
+
+}
+
+.boton-de-compra:active {
+    background-color: rgb(255, 0, 0);
+    transition-duration: 0.1ms;
+
+}
+
+
+
+
+.consolas-menu {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 50px;
+
+    justify-items: center;
+    padding: 0 0 50px 0;
+}
+
+.titulo-consola {
+    grid-area: 1/1/2/6;
+}
+
+.imagen-consolaxbox1 {
+    height: 30vh;
+    width: 11vw;
+}
+
+
+.imagen-consolaxbox2 {
+    height: 30vh;
+    width: 15vw;
+}
+
+
+.imagen-consolaxbox3 {
+    height: 30vh;
+    width: 15vw;
+}
+
+
+.imagen-consolaxbox4 {
+    height: 30vh;
+    width: 15vw;
+}
+
+
+
+.imagen-consolaxbox5 {
+    height: 30vh;
+    width: 15vw;
+}
+
+.titulo-consola {
+    grid-area: 1/1/2/7;
+    color: rgb(255, 163, 58);
+    padding: 0 0 50px 0;
+}
+
+
+.imagen-consolaxbox:hover {
+    height: 110%;
+    width: 110%;
+    transition-duration: .2s;
+    cursor: pointer;
+
+}
+
+.imagen-consolaxbox {
+    text-align: center;
+}
+
+
+@media screen and (max-width :968px) {
+
+    .texto {
+        grid-template-columns: minmax(100px, 200px);
+        justify-content: center;
+    }
+
+    .imagen-del-mando {
+        display: none;
+    }
+
+    .boton-search1 {
+        grid-area: 3/1/4/2;
+    }
+
+    .parte-de-abajo {
+        grid-template-columns: repeat(auto-fit, minmax(105px, 100px));
+    }
+
+    .imagen-1 {
+        width: 100px;
+        height: 100px;
+
+    }
+
+    .imagen-2 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .imagen-3 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .imagen-4 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .consolas-menu {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        display: grid;
+        gap: 0;
+    }
+
+    .imagen-consolaxbox1 {
+        width: 100px;
+        height: 100px;
+        grid-area: 3/1/4/2;
+    }
+
+    .imagen-consolaxbox2 {
+        width: 100px;
+        height: 100px;
+        grid-area: 2/4/3/5;
+
+    }
+
+    .imagen-consolaxbox3 {
+        width: 100px;
+        height: 100px;
+        grid-area: 3/1/4/2;
+
+    }
+
+    .imagen-consolaxbox4 {
+        width: 100px;
+        height: 100px;
+        grid-area: 2/2/3/3;
+
+    }
+
+    .imagen-consolaxbox5 {
+        width: 100px;
+        height: 100px;
+        grid-area: 2/2/3/3;
+
+    }
+
+
+}

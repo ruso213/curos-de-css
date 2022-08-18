@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family:'Roboto Mono', monospace;}
+
+.parte-de-arriba{
+    display: flex;
+    grid-template-rows: 1fr ;
+    background-color: rgb(64, 199, 163);
+    justify-content: end;
+    padding: 2.5vh 3vw 2.5vh 0;
+    grid-area: 1/1/2/2;
+    border: black 1px solid;
+
+}
+.as{
+    padding: 0 1vw;
+    color: black;
+    display: flex;
+}
+
+
+.imagen-as:hover{
+    height: 5vh;
+    transition-duration: .3s;
+    transition-delay: .2s;
+}
